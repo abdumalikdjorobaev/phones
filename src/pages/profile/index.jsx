@@ -2,16 +2,14 @@ import React from "react";
 
 import { useLocation } from 'react-router'
 import { PhoneItem } from "../PhoneItem";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { AddPhoneForm } from "../Components/addPhoneform";
 
 export const Profile = () => {
   const location = useLocation();
 
-  const dispatch = useDispatch();
-  const { profileTodo, todo } = useSelector((state) => state);
+  const {todo } = useSelector((state) => state);
 
-  console.log(location.state?.todo, todo);
 
   const getTodoById = (id) => {
     return todo.data.find((item) => item.id === id);
@@ -19,7 +17,6 @@ export const Profile = () => {
 
   const currentTodo = getTodoById(location.state?.todo?.id);
 
-  console.log('d', currentTodo);
 
 
 

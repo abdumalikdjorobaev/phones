@@ -8,8 +8,6 @@ export const TodoItem = ({ item, removeTodo, editTodo }) => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
-    reset,
   } = useForm();
 
   const edit = (data) => {

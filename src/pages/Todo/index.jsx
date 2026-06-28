@@ -11,7 +11,6 @@ export const TodoList = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
     reset,
   } = useForm();
 
