@@ -1,8 +1,8 @@
 import React from "react";
 
 import { useLocation } from 'react-router-dom'
-import { useDispatch, useSelector } from "react-redux";
-import { useForm, SubmitHandler } from "react-hook-form"
+import { useDispatch } from "react-redux";
+import { useForm } from "react-hook-form"
 import { addItemPhone } from "../../../redux/slices/todo";
 
 
@@ -10,12 +10,10 @@ export const AddPhoneForm = () => {
     const location = useLocation();
 
     const dispatch = useDispatch();
-    const { profileTodo } = useSelector((state) => state);
 
     const {
         register,
         handleSubmit,
-        watch,
         reset,
         formState: { errors },
     } = useForm()

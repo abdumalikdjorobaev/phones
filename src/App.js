@@ -1,7 +1,7 @@
 import { TodoList } from "./pages/Todo";
 
 import '../src/styles/index.scss'
-import {Routes, Route, Link} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 import { Profile } from "./pages/profile";
 
 function App() {
