@@ -18,8 +18,8 @@ export const PhoneItem = ({ item, removeTodo, editTodo }) => {
     const edit = (data) => {
         if (editing) {
             editTodo({
-                id: item.id,
-                title: data.title,
+                id: item?.id,
+                title: data?.title,
             });
             setEditing(false);
         } else {

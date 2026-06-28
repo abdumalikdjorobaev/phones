@@ -30,27 +30,27 @@ export const AddPhoneForm = () => {
             <div className='phonesForm' style={{ display: "flex", justifyContent: "space-between", alignItems: "top", gap: "20px" }}>
                 <div style={{ width: '100%' }}>
                     <input {...register("phone", { required: true })} placeholder="Телефон" />
-                    {errors.phone && <span className="error">Заполните поле</span>}
+                    {errors?.phone && <span className="error">Заполните поле</span>}
                 </div>
 
                 <div style={{ width: '100%' }}>
                     <input {...register("date", { required: true })} placeholder="Дата" />
-                    {errors.date && <span className="error">Заполните поле</span>}
+                    {errors?.date && <span className="error">Заполните поле</span>}
                 </div>
 
                 <div style={{ width: '100%' }}>
                     <input {...register("price", { required: true })} placeholder="Цена" />
-                    {errors.price && <span className="error">Заполните поле</span>}
+                    {errors?.price && <span className="error">Заполните поле</span>}
                 </div>
 
                 {/* <div>
                     <input {...register("title", { required: true })} placeholder="Название" />
-                    {errors.title && <span className="error">Заполните поле</span>}
+                    {errors?.title && <span className="error">Заполните поле</span>}
                 </div>
 
                 <div>
                     <input {...register("text", { required: true })} placeholder="Описание" />
-                    {errors.text && <span className="error">Заполните поле</span>}
+                    {errors?.text && <span className="error">Заполните поле</span>}
                 </div> */}
 
                 <div>
